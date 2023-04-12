@@ -40,6 +40,7 @@ class fmdbHelper{
                     let id = data.object(forColumn: "id") as? Int ?? 0
                     let obj = Modal(id: id, name: name)
                     array.append(obj)
+                    print("get data")
                 }
             }
             return  array
